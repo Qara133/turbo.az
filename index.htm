@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turbo.azz</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="container phh">
+            <nav class="ww">
+                <ul>
+                    <li><a id="c" href="">TURBO.AZ</a></li>
+                    <li><a id="x" href="">BİNA.AZ</a></li>
+                    <li><a id="x" href="">TAP.AZ</a></li>
+                    <i id="lk" class="fa-solid fa-circle-plus"></i>
+                </ul>
+            </nav>
+
+            <div onclick="hjk()" id="ac">
+                <button style="cursor: pointer;"><i style="color: red;" class="fa-solid fa-car"></i> Bütün markalar <i
+                        id="rh" class="fa-solid fa-chevron-down"></i></button>
+            </div>
+
+            <div onclick="bagla()" id="bag"></div>
+
+            <div id="q">
+                <button style="cursor: pointer;"><i style="color: red;" class="fa-solid fa-up-down"></i>
+                    Filtrlər</button>
+            </div>
+
+            <p>Bu gün: <a href="#">1967 yeni elan</a></p>
+
+            <ul id="kbas">
+                <li><a href="">Kreditlə</a></li>
+                <li><a href="">Barter</a></li>
+                <li><a href="">Aksesuarlar</a></li>
+                <li><a href="">Şinlər</a></li>
+                <li><a href="">İcarə</a></li>
+            </ul>
+
+            <p style="color: #525050; font-size: 1.2em; padding-bottom: 20px;">Premium Elanlar</p>
+
+        </div>
+
+
+        <!-- D E S K T O P    V E R S I O N -->
+        <div class="dsk">
+            <div class="basliq">
+                <nav class="nv">
+                    <ul>
+                        <li>
+                            <a href="#">Tap.az</a>
+                            <a href="#">Bina.az</a>
+                            <a href="#">Boss.az</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sag">
+                    <div class="p">
+                        <p>Dəstək:</p>
+                        <p class="p1">(012) 505-77-55</p>
+                    </div>
+                    <div class="nv-2">
+                        <ul>
+                            <li>
+                                <a href="#">Yardım</a>
+                                <a href="#">RU</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="i-hover">
+                        <a href="#"><i class="fa-solid fa-heart"></i> Seçilmişlər</a>
+                        <a href="#"><i class="fa-solid fa-circle-user"></i> Giriş</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tt">
+                <div class="asg">
+                    <div class="snav">
+                        <h2>TURBO.AZ</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Bütün elanlar</a>
+                                <a href="#">Salonlar</a>
+                                <a href="#">Moto</a>
+                                <a href="#">Ehtiyat hissələr və aksesuarlar</a>
+                                <a href="#">İcarə</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="fbtn">
+                        <button><i class="fa-solid fa-circle-plus"></i> Yeni elan</button>
+                    </div>
+
+                    <!-- <div class="relative w-full">
+                        <button type="submit"
+                            class="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><svg
+                                class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg></button>
+                    </div> -->
+
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- D E S K T O P    V E R S I O N -->
+    <main class="container">
+        <div class="dsk2">
+            <div class="container">
+                <div id="kl">
+                    <div id="kl-inp">
+                        <select onchange="getMark(this)" id="marka">
+                            <option value="">Marka</option>
+                        </select>
+                        <select id="model2">
+                            <option value="">Model</option>
+                        </select>
+                        <div id="thbtn">
+                            <button id="butun" onclick="hms()">Hamısı</button>
+                            <button id="yeni" onclick="yn()">Yeni</button>
+                            <button id="ikinciel" onclick="srlms()">Sürülmüş</button>
+                        </div>
+                        <select id="seher">
+                            <option value="">Şəhər</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="kl-2">
+                    <div id="kl2-inp">
+                        <input type="number" id="btn-1" placeholder="Qiymət, min." />
+                        <input type="number" id="btn-2" placeholder="maks." />
+                    </div>
+
+                    <div id="kredit">
+                        <select id="" style="cursor: pointer;">
+                            <option value="">AZN</option>
+                            <option value="">USD</option>
+                            <option value="">EUR</option>
+                        </select>
+                        <button style="cursor: pointer;" id="btn3" onclick="krdt()">Kredit</button>
+                        <button style="cursor: pointer;" id="btn4" onclick="brtr()">Barter</button>
+                    </div>
+
+                    <div id="banner">
+                        <select id="banner2">
+                            <option value="">Ban Növü</option>
+                        </select>
+                    </div>
+
+                    <div id="year">
+                        <select id="sc1">
+                            <option value="Il, min.">İl, min.</option>
+                            <option>X Sıfırla</option>
+                        </select>
+                        <select id="sc2">
+                            <option value="maks.">maks.</option>
+                            <option>X Sıfırla</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter">
+                    <div id="all-filter">
+                        <p>Bu gün: <a href="">1967 yeni elan</a></p>
+                    </div>
+
+                    <div class="right-filter">
+                        <h5 style="cursor: pointer;">Sıfırla</h5>
+                        <a href="#" id="more" onclick="moree()">Daha çox filtr <i
+                                class="fa-solid fa-angle-down"></i></a>
+
+                        <button onclick="showFilteredData()" id="elanlar-2">Elanları göstər</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div style="cursor: pointer;" id="main"></div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div id="mainn"></div>
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <div id="ac">
+
+    </div>
+
+
+
+
+
+
+
+    <!-- <div class="arxa">
+        <h3 onclick="bagla()" style="text-align: center;">Marka</h3>
+        <div class="inpdiv">
+            <input type="text" class="inpa" placeholder="Meselen, Mercedes">
+        </div>
+
+        <div class="pop">Populyar</div>
+        <div class="marka">
+            <div class="flex"><img src="" alt=""><p>Mercedes</p>
+            <input class="rightt" type="checkbox"></div>
+        </div>
+        <div class="marka">
+            <div class="flex"><img src="" alt=""><p>LADA(VAZ)</p>
+            <input class="rightt" type="checkbox"></div>
+        </div>
+        <div class="marka">
+            <div class="flex"><img src="" alt=""><p>Hyundai</p>
+            <input class="rightt" type="checkbox"></div>
+        </div>
+        <div class="marka">
+            <div class="flex"><img src="" alt=""><p>Kia</p>
+            <input class="rightt" type="checkbox"></div>
+        </div>
+        <div class="marka">
+            <div class="flex"><img src="" alt=""><p>Toyota</p>
+            <input class="rightt" type="checkbox"></div>
+        </div>
+        <div class="marka">
+            <div class="flex"><img src="" alt=""><p>BMW</p>
+            <input class="rightt" type="checkbox"></div>
+        </div>
+
+    </div> -->
+
+
+
+    <script src="data.js"></script>
+    <script src="two.js"></script>
+</body>
+
+</html>
